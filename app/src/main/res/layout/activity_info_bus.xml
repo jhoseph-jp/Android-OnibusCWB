@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0CCCD"
+    tools:context=".InfoBus">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="8dp"
+        android:background="#FFFFFF"
+        android:hint="Digite o código do ônibus"
+        app:startIconDrawable="@drawable/ic_bus">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/codOUname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/codBus"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:hint="Código"
+        app:startIconDrawable="@drawable/ic_keybus">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nomeBus"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:hint="Nome"
+        app:startIconDrawable="@drawable/ic_bus">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cardS"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="400dp"
+        android:hint="Somente Cartão"
+        app:startIconDrawable="@drawable/ic_cardbus">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/categ"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="400dp"
+        android:hint="Categoria"
+        app:startIconDrawable="@drawable/ic_categbus">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/corBus"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="200dp"
+        android:hint="Cor"
+        app:startIconDrawable="@drawable/ic_collorbus">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/pesquisarBus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:onClick="pesquisa"
+        android:text="Pesquisar" />
+
+</FrameLayout>
